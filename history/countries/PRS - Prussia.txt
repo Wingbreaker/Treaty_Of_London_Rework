@@ -1,0 +1,56 @@
+﻿capital = 64
+
+OOB = "PRS_1936"
+
+set_technology = {
+	infantry_weapons = 23
+	tech_support = 45
+	tech_recon = 23
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 11
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 10
+		}
+		
+		neutrality = { 
+			popularity = 79
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 100
+
+#Victor Emmanuel III of Italy after 39
+create_country_leader = {
+	name = "Eberhard von Braun"
+	desc = "POLITICS_Kaiser_Whelhem_The_Second_DESC"
+	picture = "Eberhard von Braun.dds"
+	expire = "1967.1.1"
+	ideology = neutrality
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "whelhem's right hand man"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 10
+}
+
