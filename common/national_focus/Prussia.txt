@@ -1,0 +1,144 @@
+focus_tree = {
+	id = Prussia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRS
+		}
+	}
+	default = no
+	focus = {
+		id = recover_from_the_great_war
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		x = 6
+		y = 0
+			completion_reward = {
+					remove_ideas = The_treaty_of_London
+					add_ideas = Forgeven_a_bit
+				}
+
+	}
+	focus = {
+		id = communism_is what_this_country_needs
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		mutually_exclusive = {
+			focus = get_the_kaiser_back
+			focus = we_need_adolf_hitler
+			focus = we_need_adolf_hitler
+		}
+		x = 6
+		y = 1
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.50
+						}
+				}
+
+	}
+	focus = {
+		id = get_the_kaiser_back
+		icon = GFX_goal_tripartite_pact
+		cost = 0.00
+		prerequisite = {
+			focus = recover_from_the_great_war
+		}
+		mutually_exclusive = {
+			focus = communism_is what_this_country_needs
+		}
+		x = 4
+		y = 1
+			completion_reward = {
+					add_popularity = {
+							ideology = Monarchism
+							popularity = 0.50
+						}
+				}
+
+	}
+	focus = {
+		id = gain_control_of_the_states
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = get_the_kaiser_back
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+					SOH = {
+							country_event = {
+									id = Prussia.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = we_need_adolf_hitler
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = recover_from_the_great_war
+		}
+		mutually_exclusive = {
+			focus = communism_is what_this_country_needs
+			focus = communism_is what_this_country_needs
+		}
+		x = 8
+		y = 1
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.50
+						}
+				}
+
+	}
+	focus = {
+		id = take_the_states_by_force
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = we_need_adolf_hitler
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = gain control_of north_german_confederation states
+		icon = GFX_goal_generic_attack_allies
+		cost = 15.00
+		prerequisite = {
+			focus = gain_control_of_the_states
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					SOH = {
+							country_event = {
+									id = Prussia.4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = Manpower
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = take_the_states_by_force
+		}
+		x = 10
+		y = 3
+			completion_reward = {
+					add_manpower = 20000
+				}
+
+	}
+}

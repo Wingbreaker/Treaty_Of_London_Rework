@@ -1,0 +1,49 @@
+ideas = {
+
+	country = {
+		The_treaty_of_London = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				unity_factor = -0.20
+				conscription_factor = -0.40
+			}
+			rule = {
+				can_create_factions = no
+			}
+		}
+	
+		Forgeven_a_bit = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				unity_factor = -0.10
+				conscription_factor = -0.20
+			}
+			rule = {
+				can_create_factions = no
+		      }
+		}
+          }
+
+
+
+}
