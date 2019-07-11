@@ -227,18 +227,16 @@ create_country_leader = {
 }
 
 set_politics = {
-
-	set_popularities = {
-	democratic = 3
-	Monarchism = 74
-}
-	
 	ruling_party = Monarchism
-	last_election = "1933.11.14"
+	last_election = "1935.1.15"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = yes
 }
 
+
+set_popularities = {
+	Monarchism = 51
+}
 
 
 create_faction = Allies

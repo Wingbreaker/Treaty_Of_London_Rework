@@ -10,22 +10,21 @@ set_technology = {
 
 set_politics = {
 
-	set_popularities = {
-	democratic = 49
-	Monarchism = 51
-}
-	
 	ruling_party = Monarchism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_popularities = {
+		Monarchism = 51
+		democratic = 49
+	}
 set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Tsar Nicholas the II"
+	name = "Czar Nikolai II"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Tsar1.dds"
 	expire = "1950.1.1"

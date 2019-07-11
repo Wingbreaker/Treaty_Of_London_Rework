@@ -10,27 +10,7 @@ set_technology = {
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 9
-		}
 
-		fascism = {
-			popularity = 3
-		}
-		
-		communism = {
-			popularity = 11
-		}
-                
-		Monarchism = { 
-			popularity = 74
-		}
-                
-		neutrality = { 
-			popularity = 3
-		}
-	}
 	
 	ruling_party = Monarchism
 	last_election = "1933.3.5"
@@ -38,11 +18,16 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_popularities = {
+		Monarchism = 90
+		democratic = 10
+	}
+	
 set_convoys = 100
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "King Gorge the V"
+	name = "H.R.I.M George V."
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "King Gorge the V.dds"
 	expire = "1965.1.1"
