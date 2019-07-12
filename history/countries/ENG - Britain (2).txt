@@ -1,6 +1,6 @@
 ﻿capital = 60
 
-OOB = "GER_1936"
+OOB = "ENG_1936"
 
 set_technology = {
 	infantry_weapons = 1
@@ -15,7 +15,7 @@ set_politics = {
 	ruling_party = Monarchism
 	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
@@ -25,9 +25,9 @@ set_popularities = {
 	
 set_convoys = 100
 
-#Victor Emmanuel III of Italy after 39
+
 create_country_leader = {
-	name = "H.R.I.M George V."
+	name = "George V."
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "King Gorge the V.dds"
 	expire = "1965.1.1"

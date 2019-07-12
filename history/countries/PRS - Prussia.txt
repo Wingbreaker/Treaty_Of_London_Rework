@@ -2,55 +2,57 @@
 
 OOB = "PRS_1936"
 
+
 set_technology = {
-	infantry_weapons = 23
-	tech_support = 45
-	tech_recon = 23
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
 }
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 11
-		}
 
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 10
-		}
-		
-		neutrality = { 
-			popularity = 79
-		}
-	}
 	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
+set_popularities = {
+		neutrality = 30
+		Monarchism = 20
+		democratic = 50
+		fascism = 0
+	}
+	
 set_convoys = 100
 
-#Victor Emmanuel III of Italy after 39
+
 create_country_leader = {
-	name = "Eberhard von Braun"
-	desc = "POLITICS_Kaiser_Whelhem_The_Second_DESC"
-	picture = "Eberhard von Braun.dds"
-	expire = "1967.1.1"
-	ideology = neutrality
+	name = "Franz von Papen"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "King Gorge the V.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Otto Braun"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "PRS_Otto_Braun.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
 	traits = {
 		#
 	}
 }
 
 create_field_marshal = {
-	name = "whelhem's right hand man"
+	name = "Xhemal Aranitasi"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	skill = 10
+	skill = 2
 }
-

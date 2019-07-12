@@ -60,6 +60,10 @@ Monarchism = {
 		
 			socialism = {
 			}
+			
+			social_democrat = {
+			}
+			
 		}
 		
 		dynamic_faction_names = {

@@ -24,7 +24,7 @@ set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Czar Nikolai II"
+	name = "Nikolai II"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Tsar1.dds"
 	expire = "1950.1.1"
@@ -39,11 +39,6 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	skill = 2
 }
-	declare_war_on = {
-		target = EST
-		target = LIT
-		target = Lat
-		type = annex_everything
-	}
+
 
 
